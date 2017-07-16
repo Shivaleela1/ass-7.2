@@ -1,0 +1,30 @@
+package stringManipulation;
+
+import java.util.Scanner;
+
+public class SubString {
+
+	public static void main(String[] args) {
+
+		Scanner sc  = new Scanner(System.in);//taking input from user through scanner class
+		
+		System.out.println("Enter String");
+		
+		String a = sc.next();
+		
+		System.out.println("Enter SubString");
+		
+		String b = sc.next();
+		               
+		int c = (a.indexOf(b)); //using inbuilt method of string to find whether sub string is found or not
+		
+		if(c == -1){
+			
+			System.out.println("SubString is not found in the string");
+		}
+		else if(c == 0){
+			System.out.println("SubString is found in the string");
+		}
+		
+    }   
+}
